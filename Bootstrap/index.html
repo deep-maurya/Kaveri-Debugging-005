@@ -5,13 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js" ></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js" ></script>    
 </head>
 <body>
     <!--Website Navbar-->
-    
-    <!--Website Introduction Section-->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container d-flex flex-row mb-3">
+            <!-- added display flex flext direction for all container items will come in one row -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="row collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- aded class row to take 12 cols width -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- aded col size 3 to take 1st 2 element 3 size width -->
+                    <div class="col-3 d-flex justify-content-evenly">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Courses
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Math(NCERT)</a></li>
+                                <li><a class="dropdown-item" href="#">Math(Foundations)</a></li>
+                                <li><a class="dropdown-item" href="#">Math(Maharasthra)</a></li>
+                                <li><a class="dropdown-item" href="#">Pace(SOE PUNJAB)</a></li>
+                            </ul>
+                        </li>
 
+                        <li class="nav-item">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">                                
+                            </form>
+                        </li>
+                    </div>
+                    <!-- this is for space 2 cols 1st 2 items and logo -->
+                    <div class="col-2"></div>
+                    <!-- this is col-2 for logo size will take 2 col size  -->
+                    <div class="col-2 d-flex justify-content-evenly">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.khanacademy.org/">
+                                <img src="./logo.png" alt="logo" width="200" height="50"
+                                    class="d-inline-block align-text-top"></a>
+                        </li>
+                    </div>
+                    <!-- extra space col-2 between logo and last 3 items -->
+                    <div class="col-2"></div>
+                    <div class="class3 d-flex justify-content-evenly">
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank"
+                                href="https://donate.khanacademy.org/give/419869/#!/donation/checkout?c_src2=Webapp.header">Donate
+                                <img class="donate"
+                                    src="data:image/png;base64,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"
+                                    height="20"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.khanacademy.org/login">Log In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.khanacademy.org/signup">Sign Up</a>
+                        </li>
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!--Website Introduction Section-->
+    <div class="conatiner-fluid">
+        <div class="container-lg">
+            <div class="p-lg-5">
+                <div class="row">
+                    <div class="col-lg-6 p-md-5 text-center">
+                        <img class="img-fluid" src="./assest/hero_student_collage_IN_2x.png" alt="">
+                    </div>
+                    <div class="col-lg-6 p-5 p-md-5">
+                        <h2>For every student,</h2>
+                    <h2>every classroom.</h2>
+                    <h2>Real results.</h2>
+                    <span>We’re a nonprofit with the mission to provide a free, world-class education</span>
+                    <br>
+                    <span>for anyone, anywhere.</span>
+                    <br>
+                    <br>
+                    <button type="button" class="btn btn-primary">Learners</button>
+                    <button type="button" class="btn btn-primary">Teachers</button>
+                    <button type="button" class="btn btn-primary">Parents</button>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
     <!--Create course Section : accordion-->
 
     <!--Why Khan academy works-->
