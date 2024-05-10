@@ -1,0 +1,42 @@
+.container {
+  width: 1320px;
+  height: 529.98px;
+  top: 4815.95px;
+  left: 300px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 325px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.card img {
+  width: 409.98px;
+  height: 299.98px;
+  border-radius: 12px;
+}
+
+.card-content {
+  padding-right: 10px;
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}/*# sourceMappingURL=main.css.map */
