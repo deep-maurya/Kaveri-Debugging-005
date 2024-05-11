@@ -1,0 +1,141 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+.cont_out {
+  background-color: rgba(235, 102, 43, 0.0509803922);
+  width: 100%;
+}
+.cont_out .cont2 {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+.cont_out .cont2 h1 {
+  padding-left: 10px;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+}
+.cont_out .cont2 .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 30px 20px;
+  justify-content: space-evenly;
+  max-width: 1200px;
+}
+.cont_out .cont2 .flex-container > .main_div {
+  background-color: #FFFFFF;
+  width: 270px;
+  height: auto;
+  top: 95px;
+  border: 1px solid #E7E6E6;
+  left: 15px;
+  border-radius: 12px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+}
+.cont_out .cont2 .flex-container > .main_div > img {
+  width: 100%;
+  border-radius: 12px 12px 0px 0px;
+}
+.cont_out .cont2 .flex-container > .main_div > .sec_div {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+.cont_out .cont2 .flex-container > .main_div > .sec_div > i {
+  color: #E2AD64;
+  font-size: 10px;
+}
+.cont_out .cont2 .flex-container > .main_div > .sec_div > span {
+  font-family: Inter;
+  font-size: 12.29px;
+  font-weight: 400;
+  line-height: 24.38px;
+  text-align: left;
+  color: #717171;
+}
+.cont_out .cont2 .flex-container > .main_div > .sec_div > p {
+  font-size: 15.88px;
+  font-weight: 500;
+  margin-top: 10px;
+  line-height: 24px;
+  text-align: left;
+  color: #05073C;
+  margin-bottom: 3px;
+}
+.cont_out .cont2 .flex-container > .main_div > .sec_div .third_div {
+  margin-top: 10px;
+  border-top: 1px solid #E7E6E6;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.cont_out .cont2 .flex-container > .main_div > .sec_div .third_div .left-half {
+  float: left;
+  font-family: Inter;
+  font-size: 12.59px;
+  font-weight: 400;
+  line-height: 24.38px;
+}
+.cont_out .cont2 .flex-container > .main_div > .sec_div .third_div .right-half {
+  font-family: Inter;
+  font-size: 12.59px;
+  font-weight: 400;
+  line-height: 24.38px;
+  float: right;
+}
+.cont_out .cont2 .flex-container > .main_div > .sec_div .third_div .right-half > span {
+  font-weight: 500;
+}
+
+.cont_out_2 {
+  background-color: #05073C;
+  width: 100%;
+}
+.cont_out_2 .cont2 {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+.cont_out_2 .cont2 h1 {
+  color: #FFFFFF;
+  margin-left: 10px;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+}
+.cont_out_2 .cont2 .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 30px 20px;
+  justify-content: space-evenly;
+  max-width: 1200px;
+}
+.cont_out_2 .cont2 .flex-container > .main_div {
+  width: 270px;
+  height: auto;
+  top: 95px;
+  left: 15px;
+  border-radius: 12px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+}
+.cont_out_2 .cont2 .flex-container > .main_div > img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */
