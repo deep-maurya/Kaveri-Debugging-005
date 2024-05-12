@@ -1,5 +1,13 @@
 # Kaveri-Debugging-005
 
+# Team Members
+
+- [@Deepak Maurya](https://github.com/deep-maurya)
+- [Mohd Saiful Islam](https://github.com/sislam824)
+- [@Ayush Kumar](https://github.com/Ayush243871)
+- [@Vishnu Sinha](https://github.com/VishnuSinha76002)
+- [@Abhishek Gupta ](https://github.com/abhigupta3985)
+
 ## Table of Contents
 
 - [About](#about)
@@ -25,7 +33,8 @@ Khan Academy is Non-profit Orginaztion, Khan academy try to provide a free, worl
 
 ## Deployment
 
-Deployed Link:-https://innovatoracademy.netlify.app/
+Deployed Link(Bootstap Project):-https://innovatoracademy.netlify.app/
+Deployed Link(Figma Project):-https://figmakaveridebugging.netlify.app/
 
 ## Getting Started
 
@@ -56,4 +65,4 @@ Flyweis_technologies Application is built using the following technologies:
 
 ## Usage
 
-- Visit the application in your web browser at http://localhost:3000 or the URL https://innovatoracademy.netlify.app/
+- Visit the application in your web browser at http://localhost:3000 or the URL https://innovatoracademy.netlify.app/ & https://figmakaveridebugging.netlify.app/
