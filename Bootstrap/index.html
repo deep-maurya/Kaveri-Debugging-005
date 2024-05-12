@@ -1,134 +1,894 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Innovators Academy | Free online Courses, Lession &amp Practice</title>
+  <link rel="shortcut icon" href="./assest/favicon.ico" type="image/x-icon">
   <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0" />
   <style>
     * {
       font-family: "Noto Serif", serif;
     }
 
-    h1,h2,h3,h4,h5,h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,p {
       font-family: "Source Serif 4", serif;
     }
-    footer li,span{
+
+    footer li,
+    span {
       font-size: 12px;
       line-height: 2.5;
       font-family: "Noto Serif", serif;
     }
+
+    .tex-dec-none a {
+      text-decoration: none;
+      color: black;
+      padding-left: 40px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .tex-dec-none a:hover {
+      text-decoration: underline;
+    }
+    .btn{
+      font-family: "Poppins", sans-serif;
+    }
+    .accordion-button span{
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+    .nav_2_span span{
+      font-size: 16px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      color: #1764f0;
+    }
+    .form-control::placeholder {
+      font-size: 16px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      color: #1764f0;
+    }
+    .mega_menu span{
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #0b2149;
+    }
+    .mega_menu li{
+      font-size: 14px;
+      font-family: "Poppins", sans-serif;
+      line-height: 2;
+      color: #1764f0;
+    }
+  
   </style>
 </head>
 
 <body>
 
-    <!--Website Navbar-->
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container d-flex flex-row mb-3">
-            <!-- added display flex flext direction for all container items will come in one row -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="row collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- aded class row to take 12 cols width -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <!-- aded col size 3 to take 1st 2 element 3 size width -->
-                    <div class="col-3 d-flex justify-content-evenly">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Courses
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Math(NCERT)</a></li>
-                                <li><a class="dropdown-item" href="#">Math(Foundations)</a></li>
-                                <li><a class="dropdown-item" href="#">Math(Maharasthra)</a></li>
-                                <li><a class="dropdown-item" href="#">Pace(SOE PUNJAB)</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">                                
-                            </form>
-                        </li>
-                    </div>
-                    <!-- this is for space 2 cols 1st 2 items and logo -->
-                    <div class="col-2"></div>
-                    <!-- this is col-2 for logo size will take 2 col size  -->
-                    <div class="col-2 d-flex justify-content-evenly">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.khanacademy.org/">
-                                <img src="./assest/logo.png" alt="logo" width="200" height="50"
-                                    class="d-inline-block align-text-top"></a>
-                        </li>
-                    </div>
-                    <!-- extra space col-2 between logo and last 3 items -->
-                    <div class="col-2"></div>
-                    <div class="class3 d-flex justify-content-evenly">
-                        <li class="nav-item">
-                            <a class="nav-link" target="_blank"
-                                href="https://donate.khanacademy.org/give/419869/#!/donation/checkout?c_src2=Webapp.header">Donate
-                                <img class="donate"
-                                    src="data:image/png;base64,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"
-                                    height="20"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.khanacademy.org/login">Log In</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.khanacademy.org/signup">Sign Up</a>
-                        </li>
-                    </div>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-    <!--Website Introduction Section-->
-    <div class="conatiner-fluid">
-        <div class="container-lg">
-            <div class="p-lg-5">
-                <div class="row">
-                    <div class="col-lg-6 p-md-5 text-center">
-                        <img class="img-fluid" src="./assest/hero_student_collage_IN_2x.png" alt="">
-                    </div>
-                    <div class="col-lg-6 p-5 p-md-5">
-                        <h2>For every student,</h2>
-                    <h2>every classroom.</h2>
-                    <h2>Real results.</h2>
-                    <span>We’re a nonprofit with the mission to provide a free, world-class education</span>
-                    <br>
-                    <span>for anyone, anywhere.</span>
-                    <br>
-                    <br>
-                    <button type="button" class="btn btn-primary">Learners</button>
-                    <button type="button" class="btn btn-primary">Teachers</button>
-                    <button type="button" class="btn btn-primary">Parents</button>                       
-                    </div>
+  <!--Website Navbar-->
+  <nav class="navbar d-md-none border-bottom navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <img style="width: 120px;" src="./assest/logo.png" alt=""> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          
+          <li class="nav-item p-0">
+            <div class="">
+              <div class="accordion" id="" style="border: none; border-bottom: 1px solid rgb(208, 208, 231)">
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header p-3 pt-1">
+                      <strong><span class="h6" style="font-family: Poppins, sans-serif;margin-left: 2px;">Login</span></strong>
+                  </h2>
                 </div>
+              </div>
+              <div class="accordion" id="" style="border: none; border-bottom: 1px solid rgb(208, 208, 231)">
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header p-3 pt-1">
+                      <strong><span class="h6" style="font-family: Poppins, sans-serif;margin-left: 2px;">Signup</span></strong>
+                  </h2>
+                </div>
+              </div>
+              <div class="accordion" id="accordionExample" style="border: none; border-bottom: 1px solid rgb(208, 208, 231)">
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_nav_1" aria-expanded="true" aria-controls="collapseOne" style="background-color: white">
+                      <strong><span class="h6" style="font-family: Poppins, sans-serif;">Math (NCERT)</span></strong>
+                    </button>
+                  </h2>
+                  <div id="collapse_nav_1" class="accordion-collapse collapse" style="background-color: white" data-bs-parent="#accordionExample">
+                    <div class="accordion-body tex-dec-none" style="background-color: white">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="d-flex gap-2 text-start flex-column">
+                            <a href="">Class 1</a>
+                            <a href="">Class 2</a>
+                            <a href="">Class 3</a>
+                            <a href="">Class 4</a>
+                            <a href="">Class 5</a>
+                            <a href="">Class 6</a>
+                            <a href="">Class 7</a>
+                          </div>
+                        </div>
+      
+                        <div class="col-6">
+                          <div class="d-flex gap-2 text-start flex-column">
+                            <a href="">Class 8</a>
+                            <a href="">Class 9</a>
+                            <a href="">Class 10</a>
+                            <a href="">Class 11</a>
+                            <a href="">Class 12</a>
+                            <a href="">ClassBoard prep</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" id="accordionExample2" style="border: none; border-bottom: 1px solid rgb(208, 208, 231)">
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed shadow-none" style="background-color: white" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_nav_2" aria-expanded="false" aria-controls="collapseSeven">
+                      <strong>
+                         <span class="h6" style="font-family: Poppins, sans-serif;">Math Foundation</span>
+                      </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse_nav_2" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                    <div class="accordion-body tex-dec-none" style="background-color: white">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="d-flex gap-2 text-start flex-column">
+                            <a href="">Class 6</a>
+                            <a href="">Class 7</a>
+                            <a href="">Class 8</a>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="d-flex gap-2 text-start flex-column">
+                            <a href="">Class 9</a>
+                            <a href="">Class 10</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" id="accordionExample3" style="border: none; border-bottom: 1px solid rgb(208, 208, 231)">
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed shadow-none" style="background-color: white" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_nav_3" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong><span class="h6" style="font-family: Poppins, sans-serif;">Math (Maharastra)</span></strong>
+                    </button>
+                  </h2>
+                  <div id="collapse_nav_3" class="accordion-collapse collapse" style="background-color: white" data-bs-parent="#accordionExample3">
+                    <div class="accordion-body tex-dec-none" style="background-color: white">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="d-flex gap-2 text-start flex-column">
+                            <a href="">Class 1</a>
+                            <a href="">Class 2</a>
+                            <a href="">Class 3</a>
+                            <a href="">Class 4</a>
+                            <a href="">Class 5</a>
+                          </div>
+                        </div>
+      
+                        <div class="col-6">
+                          <div class="d-flex gap-2 text-start flex-column">
+                            <a href="">Class 6</a>
+                            <a href="">Class 7</a>
+                            <a href="">Class 8</a>
+                            <a href="">Class 9</a>
+                            <a href="">Class 10</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" id="accordionExample4" style="border: none; border-bottom: 1px solid rgb(208, 208, 231)">
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed shadow-none" style="background-color: white" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_nav_4" aria-expanded="false" aria-controls="collapseThree">
+                      <strong>
+                       <span class="h6" style="font-family: Poppins, sans-serif;">Pace (SOE Punjab)</span>
+                      </strong>
+                    </button>
+                  </h2>
+                  <div id="collapse_nav_4" class="accordion-collapse collapse" style="background-color: white" data-bs-parent="#accordionExample4">
+                    <div class="accordion-body tex-dec-none" style="background-color: white">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="d-flex gap-2 text-start flex-column">
+                            <a href="">Math</a>
+                            <a href="">Science</a>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="d-flex gap-2 text-start flex-column">
+                            <a href="">English</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" id="accordionExample5" style="border: none; border-bottom: 1px solid rgb(208, 208, 231)">
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed shadow-none" style="background-color: white" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_nav_5" aria-expanded="false" aria-controls="collapseFour">
+                      <strong><span class="h6" style="font-family: Poppins, sans-serif;"> Science (NCERT)</span></strong>
+                    </button>
+                  </h2>
+                  <div id="collapse_nav_5" class="accordion-collapse collapse" data-bs-parent="#accordionExample5">
+                    <div class="accordion-body tex-dec-none" style="background-color: white">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="d-flex gap-2 text-start flex-column">
+                            <a href="">Class 9 Phy</a>
+                            <a href="">Class 9 Chem</a>
+                            <a href="">Class 9 Bio</a>
+                            <a href="">Class 10 Phy</a>
+                            <a href="">Class 10 Chem</a>
+                            <a href="">Class 10 Bio</a>
+                            <a href="">Class 11 Phy</a>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="d-flex gap-2 text-start flex-column">
+                            <a href="">Class 11 Chem</a>
+                            <a href="">Class 11 Bio</a>
+                            <a href="">Class 12 Phy</a>
+                            <a href="">Class 12 Chem</a>
+                            <a href="">Class 12 Bio</a>
+                            <a href="">Essentials (9-12)</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" id="accordionExample6" style="border: none; border-bottom: 1px solid rgb(208, 208, 231)">
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed shadow-none" style="background-color: white" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_nav_6" aria-expanded="false" aria-controls="collapseFour">
+                      <strong><span class="h6" style="font-family: Poppins, sans-serif;">All State Board</span></strong>
+                    </button>
+                  </h2>
+                  <div id="collapse_nav_6" class="accordion-collapse collapse" style="background-color: white" data-bs-parent="#accordionExample6">
+                    <div class="accordion-body tex-dec-none" style="background-color: white">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="d-flex gap-2 text-start flex-column">
+                            <a href="">Punjab</a>
+                            <a href="">Utter Pradesh</a>
+                            <a href="">Maharshtra</a>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="d-flex gap-2 text-start flex-column">
+                            <a href="">Assam</a>
+                            <a href="">Odisha</a>
+                            <a href="">NCERT(HINGLISH)</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" id="accordionExample7" style="border: none; border-bottom: 1px solid rgb(208, 208, 231)">
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed shadow-none" style="background-color: white" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_nav_7" aria-expanded="false" aria-controls="collapseFive">
+                      <strong><span class="h6" style="font-family: Poppins, sans-serif;">Explore More</span></strong>
+                    </button>
+                  </h2>
+                  <div id="collapse_nav_7" class="accordion-collapse collapse" style="background-color: white" data-bs-parent="#accordionExample7">
+                    <div class="accordion-body tex-dec-none" style="background-color: white">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="d-flex gap-2 text-start flex-column">
+                            <a href="">Digital SAT</a>
+                            <a href="">Grammar</a>
+                            <a href="">Computer Programming</a>
+                            <a href="">Computer Science</a>
+                            <a href="">World History</a>
+                            <a href="">Macroeconomics</a>
+                            <a href="">Microeconomics</a>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="d-flex gap-2 text-start flex-column">
+                            <a href="">Finance</a>
+                            <a href="">Personal Finance</a>
+                            <a href="">Finance Literacy</a>
+                            <a href="">Social Media Literacy</a>
+                            <a href="">AI for Education</a>
+                            <a href="">Wireless Philosophy</a>
+                            <a href="">Learn to Learn</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" id="accordionExample8" style="border: none; border-bottom: 1px solid rgb(208, 208, 231)">
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed shadow-none" style="background-color: white" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_nav_8" aria-expanded="false" aria-controls="collapseSix">
+                      <strong><span class="h6" style="font-family: Poppins, sans-serif;">Innovators for Educators</span></strong>
+                    </button>
+                  </h2>
+                  <div id="collapse_nav_8" class="accordion-collapse collapse" style="background-color: white" data-bs-parent="#accordionExample8">
+                    <div class="accordion-body tex-dec-none" style="background-color: white">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="d-flex gap-2 text-start flex-column">
+                            <a href="">Innovators FOR Educators
+                              <p>(Beginner)</p>
+                            </a>
+                            <a href="">Innovators FOR Educators
+                              <p>(Advanced)</p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="d-flex gap-2 text-start flex-column">
+                            <a href="">Innovators FOR Educators
+                              <p>(Mentors)</p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 mb-3">
+                <button style="width: 100%;" class="btn btn-primary btn-block">Donate</button>
+              </div>
             </div>
-        </div>
+          </li>
+        </ul>
+      </div>
     </div>
-        
+  </nav>
+
+  <div class="conatiner-fluid d-none d-md-block  border-bottom">
+    <div class="container-lg">
+      <div class="p-5 pt-0 pb-0">
+        <nav class="">
+          <div class="container-fluid">
+            <div class="">
+              <div class="row">
+                <div class="col">
+                  <div class="p-2 gap-3 d-flex align-self-center">
+                    <div class="nav_2_span dropdown">
+                      <div class="dropdown">
+                        <button type="button" style="border: none;" class="btn dropdown-toggle show" data-bs-toggle="dropdown" aria-expanded="true" data-bs-auto-close="outside">
+                          <span>Courses</span>
+                        </button>
+                        <div  class="dropdown-menu p-4 " data-popper-placement="bottom-start" style="background-color: #f6f8fa;width:80vw;position: absolute; inset: 0px auto auto 0px; margin: 10px; transform: translate3d(0px, 50px, 0px);">
+                          <div class="row mega_menu">
+                            <div class="col">
+                              <span>Math (Ncert)</span>                              
+                                <li>Class 1</li>
+                                <li>Class 2</li>
+                                <li>Class 3</li>
+                                <li>Class 4</li>
+                                <li>Class 5</li>
+                                <li>Class 6</li>
+                                <li>Class 7</li>
+                                <li>Class 8</li>
+                                <li>Class 9</li>
+                                <li>Class 10</li>
+                                <li>Class 11</li>
+                                <li>Class 12</li>
+                                <li>Class Board Prep</li>                            
+                            </div>
+                            <div class="col">
+                              <div class="row">
+                                <div class="col-12">
+                                  <span>Math (Maharashtra)</span>                              
+                                    <li>Class 1</li>
+                                    <li>Class 2</li>
+                                    <li>Class 3</li>
+                                    <li>Class 4</li>
+                                    <li>Class 5</li>
+                                    <li>Class 6</li>
+                                    <li>Class 7</li>
+                                    <li>Class 8</li>
+                                    <li>Class 9</li>
+                                    <li>Class 10</li>                   
+                                </div>
+                                <div class="col-12 mt-3">
+                                  <span>Pace (Soe Punjab)</span>                              
+                                    <li>Maths</li>
+                                    <li>Science</li>
+                                    <li>English</li>                       
+                                </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="row">
+                                  <div class="col-12">
+                                    <span>Science (Ncert)</span>
+                                    <li>Class 9 Phy</li>
+                                    <li>Class 9 Chem</li>
+                                    <li>Class 9 Bio</li>
+                                    <li>Class 10 Phy</li>
+                                    <li>Class 10 Chem</li>
+                                    <li>Class 10 Bio</li>
+                                    <li>Class 11 Phy</li>
+                                    <li>Class 11 Chem</li>
+                                    <li>Class 11 Bio</li>
+                                    <li>Class 12 Phy</li>
+                                    <li>Class 12 Chem</li>
+                                    <li>Class 12 Bio</li>
+                                  </div>
+                                  <div class="col-12 mt-3">
+                                    <span>All State Board</span>
+                                    <li>Punjab</li>
+                                    <li>Uttarpradesh</li>
+                                    <li>Maharastra</li>
+                                    <li>Aasam</li>
+                                    <li>NCERT (Hinglish)</li>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="row">
+                                  <div class="col-12">
+                                    <span>EXPLORE MORE</span>
+                                    <li>Digital SAT</li>
+                                    <li>Grammar</li>
+                                    <li>Computer Programming</li>
+                                    <li>Computer Science</li>
+                                    <li>World History</li>
+                                    <li>Macroeconomics</li>
+                                    <li>Microeconomics</li>
+                                    <li>Finance</li>
+                                    <li>Personal Finance</li>
+                                    <li>Financial Literacy</li>
+                                    <li>Social Media Literacy</li>
+                                    <li>AI for Education</li>
+                                    <li>Wireless Philosophy</li>
+                                    <li>Learn to Learn</li>
+                                  </div>
+                                  <div class="col-12 mt-3">
+                                    <span>KHAN FOR EDUCATORS</span>
+                                    <li>Khan for Educators (Beginner)</li>
+                                    <li>Khan for Educators (Advance)</li>
+                                    <li>Khan for Educators (Mentors)</li>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="div align-self-center">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+                  </div>
+                </div>
+                <div class="col text-center p-2">
+                  <img src="./assest/logo.png" style="width: 120px;" alt="">
+                </div>
+                <div class="col nav_2_span p-2  d-flex flex-row-reverse align-self-center gap-4 text-end">
+                  <span>Signup</span>
+                  <span>Login</span>
+                  <span class="d-flex" ><span>Donate </span><i class="mt-2 material-symbols-outlined">open_in_new</i></span>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  
+
+  <!--Website Introduction Section-->
+  <div class="conatiner-fluid">
+    <div class="container-lg">
+      <div class="p-lg-5 pt-0">
+        <div class="row">
+          <div class="col-lg-5 text-center align-self-center">
+            <img class="img-fluid" src="./assest/hero_student_collage_IN_2x.png" alt="">
+          </div>
+          <div class="col-lg-7 align-items-center p-5 p-md-5">
+            <h1 class="h1 mb-0 mt-md-5">For every student,</h1>
+            <h1 class="h1 mt-0 mb-0">every classroom.</h1>
+            <h1>Real results.</h1>
+            <p class="mt-4 mb-4">We’re a nonprofit with the mission to provide a free, world-class education for anyone,
+              anywhere.</p>
+            
+            <div class="d-none d-md-block">
+                <div class="row ">
+                  <div class="col-4">
+                    <button type="button" style="width: 100%;" class="p-2 btn btn-primary">Learners</button>
+                  </div>
+                  <div class="col-4">
+                    <button type="button" style="width: 100%;" class="p-2 btn btn-primary">Teachers</button>
+                  </div>
+                  <div class="col-4">
+                    <button type="button" style="width: 100%;" class="p-2 btn btn-primary">Parents</button>
+                  </div>
+                </div>
+              </div>
+              <div class="row  d-md-none">
+                <div class="col-12">
+                  <button type="button" style="width: 100%;" class="p-2 btn btn-primary">Start Here</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!--Create course Section : accordion-->
+  <div class="container p-4 position-relative px-lg-5 mb-5">
+    <div class=" text-center pb-4 row mx-lg-5 row-cols-lg-2 row-cols-md-1" style="background-color: #f5f5f5">
+      <div class="" style="background-color: #f5f5f5">
+        <div class="accordion" id="accordionExample" style="border: none; border-bottom: 2px solid rgb(208, 208, 231)">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: #f5f5f5">
+                <strong>
+                  <img class="rounded-5 text-center" src="https://cdn.kastatic.org/genfiles/topic-icons/icons/math.png-444b34-128c.png" width="40px" height="40px" /> <span class="h6" style="font-family: Poppins, sans-serif;font-weight: 600;">Math (NCERT)</span></strong>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" style="background-color: #f5f5f5" data-bs-parent="#accordionExample">
+              <div class="accordion-body tex-dec-none" style="background-color: #f5f5f5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="d-flex gap-2 text-start flex-column">
+                      <a href="">Class 1</a>
+                      <a href="">Class 2</a>
+                      <a href="">Class 3</a>
+                      <a href="">Class 4</a>
+                      <a href="">Class 5</a>
+                      <a href="">Class 6</a>
+                      <a href="">Class 7</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="d-flex gap-2 text-start flex-column">
+                      <a href="">Class 8</a>
+                      <a href="">Class 9</a>
+                      <a href="">Class 10</a>
+                      <a href="">Class 11</a>
+                      <a href="">Class 12</a>
+                      <a href="">ClassBoard prep</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion" id="accordionExample2" style="border: none; border-bottom: 2px solid rgb(208, 208, 231)">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed shadow-none" style="background-color: #f5f5f5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                <strong>
+                  <img class="rounded-5 text-center" src="https://cdn.kastatic.org/genfiles/topic-icons/icons/math.png-444b34-128c.png" width="40px" height="40px" /> <span class="h6" style="font-family: Poppins, sans-serif;font-weight: 600;">Math Foundation</span>
+                </strong>
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
+              <div class="accordion-body tex-dec-none" style="background-color: #f5f5f5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="d-flex gap-2 text-start flex-column">
+                      <a href="">Class 6</a>
+                      <a href="">Class 7</a>
+                      <a href="">Class 8</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex gap-2 text-start flex-column">
+                      <a href="">Class 9</a>
+                      <a href="">Class 10</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion" id="accordionExample3" style="border: none; border-bottom: 2px solid rgb(208, 208, 231)">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed shadow-none" style="background-color: #f5f5f5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <strong>
+                  <img class="rounded-5 text-center" src="https://cdn.kastatic.org/genfiles/topic-icons/icons/math.png-444b34-128c.png" width="40px" height="40px" /> <span class="h6" style="font-family: Poppins, sans-serif;font-weight: 600;">Math (Maharastra)</span></strong>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" style="background-color: #f5f5f5" data-bs-parent="#accordionExample3">
+              <div class="accordion-body tex-dec-none" style="background-color: #f5f5f5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="d-flex gap-2 text-start flex-column">
+                      <a href="">Class 1</a>
+                      <a href="">Class 2</a>
+                      <a href="">Class 3</a>
+                      <a href="">Class 4</a>
+                      <a href="">Class 5</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="d-flex gap-2 text-start flex-column">
+                      <a href="">Class 6</a>
+                      <a href="">Class 7</a>
+                      <a href="">Class 8</a>
+                      <a href="">Class 9</a>
+                      <a href="">Class 10</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion" id="accordionExample4" style="border: none; border-bottom: 2px solid rgb(208, 208, 231)">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed shadow-none" style="background-color: #f5f5f5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <strong>
+                  <img class="rounded-5 text-center" src="https://cdn.kastatic.org/genfiles/topic-icons/icons/science_green.png-4ca7bf-128c.png" width="40px" height="40px" /> <span class="h6" style="font-family: Poppins, sans-serif;font-weight: 600;">Pace (SOE Punjab)</span>
+                </strong>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse show" style="background-color: #f5f5f5" data-bs-parent="#accordionExample4">
+              <div class="accordion-body tex-dec-none" style="background-color: #f5f5f5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="d-flex gap-2 text-start flex-column">
+                      <a href="">Math</a>
+                      <a href="">Science</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex gap-2 text-start flex-column">
+                      <a href="">English</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- sect---2 -->
+
+      <div class="">
+        <div class="accordion" id="accordionExample5" style="border: none; border-bottom: 2px solid rgb(208, 208, 231)">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed shadow-none" style="background-color: #f5f5f5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour_exta" aria-expanded="false" aria-controls="collapseFour">
+                <strong>
+                  <img class="rounded-5 text-center" src="https://cdn.kastatic.org/genfiles/topic-icons/icons/science_green.png-4ca7bf-128c.png" width="40px" height="40px" /><span class="h6" style="font-family: Poppins, sans-serif;font-weight: 600;"> Science (NCERT)</span></strong>
+              </button>
+            </h2>
+            <div id="collapseFour_exta" class="accordion-collapse collapse show" data-bs-parent="#accordionExample5">
+              <div class="accordion-body tex-dec-none" style="background-color: #f5f5f5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="d-flex gap-2 text-start flex-column">
+                      <a href="">Class 9 Phy</a>
+                      <a href="">Class 9 Chem</a>
+                      <a href="">Class 9 Bio</a>
+                      <a href="">Class 10 Phy</a>
+                      <a href="">Class 10 Chem</a>
+                      <a href="">Class 10 Bio</a>
+                      <a href="">Class 11 Phy</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex gap-2 text-start flex-column">
+                      <a href="">Class 11 Chem</a>
+                      <a href="">Class 11 Bio</a>
+                      <a href="">Class 12 Phy</a>
+                      <a href="">Class 12 Chem</a>
+                      <a href="">Class 12 Bio</a>
+                      <a href="">Essentials (9-12)</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion" id="accordionExample6" style="border: none; border-bottom: 2px solid rgb(208, 208, 231)">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed shadow-none" style="background-color: #f5f5f5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <strong>
+                  <img class="rounded-5 text-center" src="https://cdn.kastatic.org/genfiles/topic-icons/icons/math.png-444b34-128c.png" width="40px" height="40px" /> <span class="h6" style="font-family: Poppins, sans-serif;font-weight: 600;">All State Board</span></strong>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse show" style="background-color: #f5f5f5" data-bs-parent="#accordionExample6">
+              <div class="accordion-body tex-dec-none" style="background-color: #f5f5f5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="d-flex gap-2 text-start flex-column">
+                      <a href="">Punjab</a>
+                      <a href="">Utter Pradesh</a>
+                      <a href="">Maharshtra</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex gap-2 text-start flex-column">
+                      <a href="">Assam</a>
+                      <a href="">Odisha</a>
+                      <a href="">NCERT(HINGLISH)</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion bg-secondary-subtle" id="accordionExample7" style="border: none; border-bottom: 2px solid rgb(208, 208, 231)">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed shadow-none" style="background-color: #f5f5f5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <strong><img class="rounded-5 text-center" src="https://cdn.kastatic.org/genfiles/topic-icons/icons/life_skills.png-1a4785-128c.png" width="40px" height="40px" /> <span class="h6" style="font-family: Poppins, sans-serif;font-weight: 600;">Explore More</span></strong>
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse show" style="background-color: #f5f5f5" data-bs-parent="#accordionExample7">
+              <div class="accordion-body tex-dec-none" style="background-color: #f5f5f5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="d-flex gap-2 text-start flex-column">
+                      <a href="">Digital SAT</a>
+                      <a href="">Grammar</a>
+                      <a href="">Computer Programming</a>
+                      <a href="">Computer Science</a>
+                      <a href="">World History</a>
+                      <a href="">Macroeconomics</a>
+                      <a href="">Microeconomics</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex gap-2 text-start flex-column">
+                      <a href="">Finance</a>
+                      <a href="">Personal Finance</a>
+                      <a href="">Finance Literacy</a>
+                      <a href="">Social Media Literacy</a>
+                      <a href="">AI for Education</a>
+                      <a href="">Wireless Philosophy</a>
+                      <a href="">Learn to Learn</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="accordionExample8" style="border: none; border-bottom: 2px solid rgb(208, 208, 231)">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed shadow-none" style="background-color: #f5f5f5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <strong><img class="rounded-5 text-center" src="https://cdn.kastatic.org/genfiles/topic-icons/icons/science_green.png-4ca7bf-128c.png" width="40px" height="40px" /> <span class="h6" style="font-family: Poppins, sans-serif;font-weight: 600;">For Educators</span></strong>
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse show" style="background-color: #f5f5f5" data-bs-parent="#accordionExample8">
+              <div class="accordion-body tex-dec-none" style="background-color: #f5f5f5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="d-flex gap-2 text-start flex-column">
+                      <a href="">Innovators FOR Educators
+                        <p>(Beginner)</p>
+                      </a>
+                      <a href="">Innovators FOR Educators
+                        <p>(Advanced)</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex gap-2 text-start flex-column">
+                      <a href="">Innovators FOR Educators
+                        <p>(Mentors)</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="position-absolute top-80 start-50 translate-middle">
+      <a href="#why_khan" class="border-0 rounded-circle py-2 px-3" style="background-color: #5ba26f">
+        <svg aria-hidden="true" class="_xcj67v" focusable="false" width="16" height="9" viewBox="0 0 16 9">
+          <path fill="#ffffff"
+            d="M13.9558 0.330316C14.3874 -0.101316 15.0872 -0.101316 15.5189 0.330316C15.9505 0.761948 15.9505 1.46176 15.5189 1.89339L8.88728 8.52497C8.45564 8.9566 7.75583 8.9566 7.3242 8.52497L0.692621 1.89339C0.260988 1.46176 0.260988 0.761948 0.692621 0.330316C1.12425 -0.101316 1.82407 -0.101316 2.2557 0.330316L8.10574 6.18036L13.9558 0.330316Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </div>
 
   <!--Why Khan academy works-->
+  <div id="why_khan" class="container bg-white px-lg-5">
+    <div class="p-5">
+      <div class="row gap-5">
+        <h1 class="h1 text-center mb-5" style="font-weight: 600;">
+          Why Innovators Academy works
+        </h1>
+
+        <div class="row row-cols-lg-3 justify-content-start align-items-start text-center">
+          <div class="d-flex flex-column gap-4 justify-content-center align-items-center">
+            <img src="./assest/personalized_learning_icon.png" alt="" width="110px" height="110px" />
+            <h4 style="font-weight: 400;">Personalized learning</h4>
+            <p>
+              Students practice at their own pace, first filling in gaps in
+              their understanding and then accelerating their learning.
+            </p>
+          </div>
+
+          <div class="d-flex flex-column gap-4 justify-content-center align-items-center">
+            <img src="./assest/trusted_content_icon.png" alt="" width="110px" height="110px" />
+            <h4 style="font-weight: 400;">Trusted content</h4>
+            <p>
+              Created by experts, Innovators Academy’s library of trusted,
+              standards-aligned practice and lessons covers math K-12 through
+              early college, grammar, science, history, SAT®, and more. It’s
+              all free for learners and teachers.
+            </p>
+          </div>
+
+          <div class="d-flex flex-column gap-4 justify-content-center align-items-center">
+            <img src="./assest/empower_teachers_icon.png" alt="" width="110px" height="110px" />
+            <h4 style="font-weight: 400;">Tools to empower teachersg</h4>
+            <p>
+              With Innovators Academy, teachers can identify gaps in their students’
+              understanding, tailor instruction, and meet the needs of every
+              student.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--TEACHERS-->
   <div class="conatiner-fluid">
@@ -149,7 +909,7 @@
               UDAYA LAKSHMI PALAPALA / Middle school Coordinator / Hyderabad, Telangana
             </p>
             <p class="mt-3">
-              We empower teachers to support their entire classroom. 90% of US teachers who have used Khan Academy have
+              We empower teachers to support their entire classroom. 90% of US teachers who have used Innovators Academy have
               found us effective.
             </p>
             <button class="mt-3 btn btn-lg btn-primary">
@@ -168,11 +928,11 @@
         <div class="row">
 
           <div class="col-lg-6 p-5 p-md-5">
-            <p class="text-start" style="color: #93959b">
+            <p class="text-start mb-2 mt-5" style="color: #93959b">
               LEARNERS AND STUDENTS
             </p>
-            <h1 class="h1">You can learn anything.</h1>
-            <p class="mt-3">
+            <h1 class="h1" style="font-weight: 600;">You can learn <br>anything.</h1>
+            <p class="mt-4">
               Build a deep, solid understanding in math, science, grammar, history, SAT®, and more.
             </p>
             <button class="mt-3 btn btn-lg btn-primary">
@@ -187,14 +947,13 @@
     </div>
   </div>
 
-
   <!--Student feedback-->
   <div class="conatiner-fluid" style="background-color: #f5f5f5;">
     <div class="container-lg">
       <div class="p-lg-5">
         <div class="row pt-5 pb-5 p-md-5 ">
           <h2 class="h3 mt-4">“When I was a child, I used to fear mathematics. But now, I am in love with mathematics
-            because of Khan Academy.”</h2>
+            because of Innovators Academy.”</h2>
           <div class="row mb-4  mt-3">
             <div class="col-8 col-md-10 text-end align-self-center">
               <h4 class="h4">ANJALI</h4>
@@ -208,6 +967,7 @@
       </div>
     </div>
   </div>
+
   <!--TOGETHER WE CAN MAKE A DIFFERENCE-->
   <div class="conatiner-fluid">
     <div class="container-lg">
@@ -235,7 +995,7 @@
       <div class="p-lg-5 pt-5">
         <div class="row mt-5">
           <div class="col-md-7 mx-auto">
-            <h1 class="h1 text-center">Join Khan Academy today</h1>
+            <h1 class="h1 text-center">Join Innovators Academy today</h1>
             <div class="text-center pt-5"
               style="height:500px;position:relative;background-image: url(./assest/last_chance_collage@2x.png);background-size: cover;background-repeat: no-repeat;background-position: center;">
               <div class="d-grid gap-3 col-6 mx-auto">
@@ -251,9 +1011,7 @@
     </div>
   </div>
 
-
   <!--KEY SUPPORTERS-->
-
   <div class="conatiner-fluid " style="background-color: #f5f5f5;">
     <div class="container-lg">
       <div class="p-lg-5">
@@ -266,7 +1024,7 @@
                   <img style="width: 30vw;" class="img-fluid" src="./assest/image.png" alt="logo-Loding">
                 </div>
                 <div class="col-md-6 col-xl-3 p-3 p-md-5">
-                  <img style="width: 30vw;"  class="img-fluid" src="./assest/image copy.png" alt="logo-Loding">
+                  <img style="width: 30vw;" class="img-fluid" src="./assest/image copy.png" alt="logo-Loding">
                 </div>
                 <div class="col-md-6 col-xl-3 p-3 p-md-5">
                   <img style="width: 30vw;" class="img-fluid" src="./assest/image copy 2.png" alt="logo-Loding">
@@ -294,23 +1052,17 @@
     </div>
   </div>
 
-
   <!--Footer-->
-
-
   <footer class="footer text-white" style="background-color: #0b2149;">
     <div class="container">
-
       <div class="row">
         <div class="col-md-4 p-5">
           <h1 class="fs-6 p-2" style="color: #8295ba;">Our mission is to provide a free, world-class education to
             anyone, anywhere.</h1>
           <h1 class="fs-6 p-2" style="color: #8295ba;">
-            Khan Academy is a 501(c)(3) nonprofit organization. <a class=" text-white" href="">Donate</a> or <a
+            Innovators Academy is a 501(c)(3) nonprofit organization. <a class=" text-white" href="">Donate</a> or <a
               class=" text-white" href="">volunteer</a> today!</h1>
         </div>
-      
-
         <div class="col-md-8 p-5 ">
           <div class="row">
             <div class="col-md-4 col-6">
@@ -340,7 +1092,6 @@
                 <li></li>
                 <br>
                 <li>Download our apps</li>
-    
               </ul>
               <div class=""><img style="width: 100px; " src="./assest/playStore.png" alt=""></div>
               <div class="mt-2"><img style="width: 100px;" src="./assest/googlePlay.png" alt=""></div>
@@ -355,34 +1106,33 @@
                 <li>Science (NCERT)</li>
                 <li>All State boards</li>
                 <li>Explore more</li>
-                <li>Khan for Educators</li>
+                <li>Innovators for Educators</li>
               </ul>
             </div>
           </div>
-          
         </div>
-
       </div>
       <div class="container">
         <div class="row p-5 pb-0">
           <div class="col-12 text-center text-lg-start">
-                <span class="text-white-50">Language</span>
-                <span>English</span>
+            <span class="text-white-50">Language</span>
+            <span>English</span>
           </div>
           <div class="col-12 text-center text-lg-start d-flex gap-2">
             <span class="text-white-50">Country</span>
-                <span> <img src="./assest/united-states.png" alt=""> U.S.</span>
-                <span> <img src="./assest/india.png" alt=""> India</span>
-                <span> <img src="./assest/f_mexico.png" alt=""> Mexico</span>
-                <span> <img src="./assest/f_brazil.png" alt=""> Brazil</span>
+            <span> <img src="./assest/united-states.png" alt=""> U.S.</span>
+            <span> <img src="./assest/india.png" alt=""> India</span>
+            <span> <img src="./assest/f_mexico.png" alt=""> Mexico</span>
+            <span> <img src="./assest/f_brazil.png" alt=""> Brazil</span>
           </div>
         </div>
         <div class="row p-5 pt-0">
-          <div class="col-lg-6 text-center flex-md-row flex-column text-lg-start d-flex gap-2" style="line-height: normal;">
-                <span class="text-white-50">© 2024 Khan Academy</span>
-                <span>term of use</span>
-                <span>Privacy policy</span>
-                <span>Cookie Notice</span>
+          <div class="col-lg-6 text-center flex-md-row flex-column text-lg-start d-flex gap-2"
+            style="line-height: normal;">
+            <span class="text-white-50">© 2024 Innovators Academy</span>
+            <span>term of use</span>
+            <span>Privacy policy</span>
+            <span>Cookie Notice</span>
           </div>
           <div class="col-lg-6 text-center text-lg-end gap-3">
             <ul class="list-inline footer-links">
@@ -393,15 +1143,10 @@
           </div>
         </div>
       </div>
-      
 
     </div>
-
-    
     <!-- </div>  -->
   </footer>
-
-
 
 </body>
 
