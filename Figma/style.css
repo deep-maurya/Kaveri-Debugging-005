@@ -47,7 +47,6 @@ html {
   font-size: 30px;
   font-weight: 700;
   line-height: 45px;
-  text-align: left;
 }
 .container_grid .cont2 .grid-container {
   padding: 10px;
@@ -90,7 +89,6 @@ html {
   font-size: 30px;
   font-weight: 700;
   line-height: 45px;
-  text-align: left;
 }
 .cont_out .cont2 .flex-container {
   display: flex;
@@ -181,7 +179,6 @@ html {
   font-size: 30px;
   font-weight: 700;
   line-height: 45px;
-  text-align: left;
 }
 .container .cont2 .flex-container {
   display: flex;
@@ -249,7 +246,6 @@ html {
   font-size: 30px;
   font-weight: 700;
   line-height: 45px;
-  text-align: left;
 }
 .cont_out_2 .cont2 .flex-container {
   display: flex;
@@ -271,6 +267,59 @@ html {
 .cont_out_2 .cont2 .flex-container > .main_div > img {
   width: 100%;
   border-radius: 12px;
+}
+
+@media screen and (max-width: 850px) {
+  .heading {
+    text-align: center;
+    padding-left: 0px;
+  }
+  .container_grid .cont2 .grid-container {
+    grid-template-areas: "img1 img1 img2 img2 " "img1 img1 img4 img4 " "img3 img3 img3 img3" "img5 img5 img6 img6";
+  }
+  .container .cont2 .flex-container {
+    gap: 10px;
+  }
+  .container .cont2 .flex-container > .main_div {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+  .cont_out .cont2 .flex-container {
+    gap: 30px, 4%;
+  }
+  .cont_out .cont2 .flex-container > .main_div {
+    width: 46%;
+  }
+  .cont_out_2 .cont2 .flex-container {
+    gap: 30px, 4%;
+  }
+  .cont_out_2 .cont2 .flex-container > .main_div {
+    width: 46%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container_grid .cont2 .grid-container {
+    grid-template-areas: "img1 img1 img2 img2 " "img1 img1 img4 img4 " "img3 img3 img3 img3" "img5 img5 img6 img6";
+  }
+  .container .cont2 .flex-container {
+    gap: 10px;
+  }
+  .container .cont2 .flex-container > .main_div {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .cont_out .cont2 .flex-container {
+    gap: 30px, 4%;
+  }
+  .cont_out .cont2 .flex-container > .main_div {
+    width: 100%;
+  }
+  .cont_out_2 .cont2 .flex-container {
+    gap: 30px, 4%;
+  }
+  .cont_out_2 .cont2 .flex-container > .main_div {
+    width: 46%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
