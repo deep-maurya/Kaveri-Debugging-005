@@ -5,7 +5,7 @@
 - [@Deepak Maurya](https://github.com/deep-maurya)
 - [Mohd Saiful Islam](https://github.com/sislam824)
 - [@Ayush Kumar](https://github.com/Ayush243871)
-- [@Vishnu Sinha](https://github.com/VishnuSinha76002)
+- [@Vishnu Sinha](https://github.com/VishnuSinha7600)
 - [@Abhishek Gupta ](https://github.com/abhigupta3985)
 
 ## Table of Contents
