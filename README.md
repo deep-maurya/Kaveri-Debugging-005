@@ -1,16 +1,23 @@
 # Kaveri-Debugging-005
 
 ## Introduction
-1. Innovators Academy
+
+ Innovators Academy
+ 
 "Anyone can learn anything. For free."
 Innovators Academy is Non-profit Orginaztion, Innovators Academy try to provide a free, world-class education to anyone, anywhere. Innovators Academy offers practice exercises, instructional videos, and a personalized learning dashboard that empower learners to study at their own pace in and outside of the classroom. this academy tackle math, science, computing, history, art history, economics, and more, including K-14 and test preparation (SAT, Praxis, LSAT) content. this academy focus on skill mastery to help learners establish strong foundations, so there's no limit to what they can learn next!.
 
+
+## Project Type
+Frontend
+
+
 ## Deployment
 
-Deployed Link(Bootstap Project):-https://innovatoracademy.netlify.app/
+Deployed Link(Bootstap Project):-https://innovatoracademy.netlify.app/ <br>
 Deployed Link(Figma Project):-https://figmakaveridebugging.netlify.app/
 
-##Directory Structure
+## Directory Structure
 <pre>
 Kaveri-Debugging-005--
 |-----frontend/
@@ -37,6 +44,17 @@ Kaveri-Debugging-005--
 ![Screenshot 3](./Bootstrap/assest/pic3.png)
 
 
+## Video Walkthrough of the project
+
+https://www.youtube.com/watch?v=DUWaSZnYgZM
+
+## Features
+
+1. Fully responsive in mobile view
+
+2. Fully responsive in tablet view
+
+3. Used bootstrap Library for UI
 
 ## Getting Started
 
