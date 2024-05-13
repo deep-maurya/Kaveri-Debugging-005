@@ -10,22 +10,33 @@ Innovators Academy is Non-profit Orginaztion, Innovators Academy try to provide 
 Deployed Link(Bootstap Project):-https://innovatoracademy.netlify.app/
 Deployed Link(Figma Project):-https://figmakaveridebugging.netlify.app/
 
+##Directory Structure
+<pre>
+Kaveri-Debugging-005--
+|-----frontend/
+├───Bootstrap/
+│   ├───assets/
+│   │   ├───images/
+│   ├───Index.html/
+│   │   ├───Header/
+│   │   ├───Section/
+│   │   └───Footer/
+|
+├───Figma/
+│   ├───assets/
+│   │   ├───images/
+│   ├───Index.html/
+│   │   ├───Header/
+│   │   ├───Section/
+│   │   └───Footer/
+</pre>
 ## Screenshots
 
 ![Screenshot 1](./Bootstrap/assest/pic1.png)
 ![Screenshot 2](./Bootstrap/assest/pic2.png)
 ![Screenshot 3](./Bootstrap/assest/pic3.png)
 
-##Directory Structure
-Kaveri-Debugging-005--
-|-----frontend/
-├───Bootstrap/
-│   ├───assets/
-│   │   ├───images/
-│   ├───components/
-│   │   ├───Header/
-│   │   ├───Section/
-│   │   └───Footer/
+
 
 ## Getting Started
 
@@ -47,12 +58,12 @@ npm start
 
 ## Technologies Used
 
-Flyweis_technologies Application is built using the following technologies:
+Innovators Academy Application is built using the following technologies:
 
 - Html
 - CSS
 - Bootsrap
-- SCSS
+
 
 ## Usage
 
