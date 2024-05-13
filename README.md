@@ -1,40 +1,31 @@
 # Kaveri-Debugging-005
 
-# Team Members
-
-- [@Deepak Maurya](https://github.com/deep-maurya)
-- [Mohd Saiful Islam](https://github.com/sislam824)
-- [@Ayush Kumar](https://github.com/Ayush243871)
-- [@Vishnu Sinha](https://github.com/VishnuSinha7600)
-- [@Abhishek Gupta ](https://github.com/abhigupta3985)
-
-## Table of Contents
-
-- [About](#about)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
-
-## About
-
+## Introduction
+1. Innovators Academy
 "Anyone can learn anything. For free."
-Khan Academy is Non-profit Orginaztion, Khan academy try to provide a free, world-class education to anyone, anywhere. Khan Academy offers practice exercises, instructional videos, and a personalized learning dashboard that empower learners to study at their own pace in and outside of the classroom. this academy tackle math, science, computing, history, art history, economics, and more, including K-14 and test preparation (SAT, Praxis, LSAT) content. this academy focus on skill mastery to help learners establish strong foundations, so there's no limit to what they can learn next!.
+Innovators Academy is Non-profit Orginaztion, Innovators Academy try to provide a free, world-class education to anyone, anywhere. Innovators Academy offers practice exercises, instructional videos, and a personalized learning dashboard that empower learners to study at their own pace in and outside of the classroom. this academy tackle math, science, computing, history, art history, economics, and more, including K-14 and test preparation (SAT, Praxis, LSAT) content. this academy focus on skill mastery to help learners establish strong foundations, so there's no limit to what they can learn next!.
+
+## Deployment
+
+Deployed Link(Bootstap Project):-https://innovatoracademy.netlify.app/
+Deployed Link(Figma Project):-https://figmakaveridebugging.netlify.app/
 
 ## Screenshots
 
 ![Screenshot 1](./Bootstrap/assest/pic1.png)
 ![Screenshot 2](./Bootstrap/assest/pic2.png)
 ![Screenshot 3](./Bootstrap/assest/pic3.png)
-![Screenshot 3](./Bootstrap/assest/figma1.png)
-![Screenshot 3](./Bootstrap/assest/figma2.png)
 
-## Deployment
-
-Deployed Link(Bootstap Project):-https://innovatoracademy.netlify.app/
-Deployed Link(Figma Project):-https://figmakaveridebugging.netlify.app/
+##Directory Structure
+Kaveri-Debugging-005--
+|-----frontend/
+├───Bootstrap/
+│   ├───assets/
+│   │   ├───images/
+│   ├───components/
+│   │   ├───Header/
+│   │   ├───Section/
+│   │   └───Footer/
 
 ## Getting Started
 
